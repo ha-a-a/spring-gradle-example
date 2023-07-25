@@ -1,0 +1,5 @@
+rootProject.name = 'spring-gradle-example'
+
+include ':spring-sub-first'
+include ':spring-sub-service'
+
