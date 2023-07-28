@@ -1,3 +1,19 @@
 service:
   message: Hola, gradle
 
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://127.0.0.1:3306/my_test?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&rewriteBatchedStatements=true
+      username: 13569
+      password: 246810
+      driverClassName: com.mysql.jdbc.Driver
+      initial-size: 2
+      max-active: 2
+      min-idle: 2
+      test-on-borrow: true
+      validation-query: select 1
+      connection-init-sqls: SET NAMES utf8mb4
+
+  jpa:
+    show-sql: true
