@@ -1,6 +1,6 @@
 package com.example.first.student;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -9,6 +9,6 @@ import org.springframework.stereotype.Repository;
  * @createTime 2023年07月26日 18:14:00
  */
 @Repository
-public interface StudentRepository extends CrudRepository<Student, Integer> {
-    Student findByUid(Long uid);
+public interface StudentRepository extends JpaRepository<Student, Integer> {
+    Student findByUid(Integer uid);
 }
