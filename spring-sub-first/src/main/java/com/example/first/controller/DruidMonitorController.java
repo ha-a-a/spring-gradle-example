@@ -6,17 +6,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author tangmengyue
- * @Description
+ * @Description  druid 监控数据
  * @createTime 2023年08月11日 17:01:00
  */
 @RestController
 public class DruidMonitorController {
-    /**
-     * druid 监控数据
-     *
-     * @author Pumpkin
-     * @createTime 2023/3/30 20:55
-     */
     @GetMapping("/druid/stat")
     public Object druidStat() {
         // DruidStatManagerFacade#getDataSourceStatDataList 该方法可以获取所有数据源的监控数据，
