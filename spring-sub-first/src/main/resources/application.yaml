@@ -14,5 +14,7 @@ spring:
       test-on-borrow: true
       validation-query: select 1
       connection-init-sqls: SET NAMES utf8mb4
+      stat-view-servlet:
+        enabled: true
   jpa:
     show-sql: true
