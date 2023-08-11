@@ -1,8 +1,8 @@
 package com.example.first.student;
 
+import jakarta.persistence.*;
 import lombok.Data;
 
-import javax.persistence.*;
 
 /**
  * @author tangmengyue
