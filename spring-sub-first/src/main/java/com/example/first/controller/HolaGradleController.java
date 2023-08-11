@@ -2,6 +2,7 @@ package com.example.first.controller;
 
 import com.example.first.student.Student;
 import com.example.first.student.StudentRepository;
+import com.example.second.service.MyService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,14 +18,14 @@ import org.springframework.web.bind.annotation.RestController;
 @AllArgsConstructor
 public class HolaGradleController {
 
-//    private final MyService myService;
+    private final MyService myService;
     private final StudentRepository studentRepository;
 
 
-//    @GetMapping("/hola")
-//    public String hola() {
-//        return myService.message();
-//    }
+    @GetMapping("/hola")
+    public String hola() {
+        return myService.message();
+    }
 
     @GetMapping("/friend")
     public String myFriend(Integer uid) {
